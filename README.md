@@ -27,7 +27,7 @@ http://www.cs.tut.fi/~tjm/seminars/nosql2012/NoSQL-Intro.pdf
 
 ## DDL
 Designing and creating a database
-Our goal is to create an address book that contains the name, address and phone numbers of our friends. How do we start?
+Our goal is to extend the todo list example you started in node to use a database. First we will use a relational database (MySQL) and then we will do the same thing with a NoSQL databse (probably Mongo).
 
 Our design should allow us to update data easily and avoid duplication while allowing flexibility 
 *Extra reading* 

@@ -33,19 +33,24 @@ create table todos (
 Delete tables using the `drop table TABLE_NAME` syntax (be careful!)
 
 Show the structure of a table (not what is IN the table) using:
+
 `desc TABLE_NAME`
+
 `describe TABLE_NAME`
+
 `show columns from TABLE_NAME`
 (these all do the same thing!)
 
 Show the commands (SQL) used to create a table with:
+
 `show create table TABLE_NAME`
 
 Discussed the difference between varchar(1) and varchar(255) (or any number)
-If you are not clear on this please red the first 5 paragraphs of this: 
+If you are not clear on this please read the first 5 paragraphs of this: 
 [MySQL char and varchar](http://dev.mysql.com/doc/refman/5.7/en/char.html)
 
-Run your own tests to understand this but to get you started 
+# We played around a little (this is important)
+Run your own tests to understand this but to get you started:
 ### Example 1
 ```
 create table string_test (
@@ -53,7 +58,7 @@ create table string_test (
 	string2 varchar(23) 
 );
 
-insert into table string_test (string1, string2) values ('abcdefghijklmnopq', 'a');
+insert into string_test (string1, string2) values ('abcdefghijklmnopq', 'a');
 show errors; 
 show warnings;
 select * from string_test;
@@ -69,10 +74,10 @@ CREATE TABLE int_test (
   id2 int(23)
 );
 
-insert into table int_test (id1, id2) values (99999999, 1);
+insert into int_test (id1, id2) values (99999999, 1);
 show errors; 
 show warnings;
-select * from string_test;
+select * from int_test;
 ```
 
 # Homework 1
@@ -106,9 +111,9 @@ mysql> desc todos;
 3 rows in set (0.00 sec)
 ```
 For this you will need to understand 3 things:
-  1. Default values (Google default values mysql)
-  2. The meaning of `auto_increment` and how to use it
-  3. How to tell mysql which column should be the primary_key 
+  1. Default values for columns (Google default values mysql)
+  2. The meaning of `auto_increment` and how to use it [http://dev.mysql.com/doc/refman/5.7/en/create-table.html](MySQL reference) but use the force of the Google! 
+  3. How to tell mysql which column should be the primary_key - IMPORTANT TOPIC we will discuss next week but for now please just understand what adding the `primary_key` statement means when creating a table. Have a look [http://www.mysqltutorial.org/mysql-primary-key/](here). 
 
 If you have time...
 3. It is generally a bad idea to use mysql as user `root` all the time. 

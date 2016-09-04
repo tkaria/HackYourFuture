@@ -82,7 +82,7 @@ select * from int_test;
 
 # Homework 1
 
-1. Create a table in the `todos` database also named `todos` that will store the list of todos
+* Create a table in the `todos` database also named `todos` that will store the list of todos
 The table should look as follows:
 ```
 mysql> desc todos;
@@ -96,7 +96,7 @@ mysql> desc todos;
 3 rows in set (0.01 sec)
 ```
 
-2. There were some good suggestions in class that the `Id` field should increment every time we add something to the todos list
+* There were some good suggestions in class that the `Id` field should increment every time we add something to the todos list
 and that the default value for `Done` should be `false`
 Your next assignment is to make the table look like this:
 ```
@@ -113,9 +113,10 @@ mysql> desc todos;
 For this you will need to understand 3 things:
   1. Default values for columns (Google default values mysql)
   2. The meaning of `auto_increment` and how to use it [http://dev.mysql.com/doc/refman/5.7/en/create-table.html](MySQL reference) but use the force of the Google! 
-  3. How to tell mysql which column should be the primary_key - IMPORTANT TOPIC we will discuss next week but for now please just understand what adding the `primary_key` statement means when creating a table. Have a look [http://www.mysqltutorial.org/mysql-primary-key/](here). 
-
-If you have time...
-3. It is generally a bad idea to use mysql as user `root` all the time. 
+  3. How to tell mysql which column should be the primary_key - IMPORTANT TOPIC we will discuss next week but for now please just understand what adding the `primary_key` statement means when creating a table. Have a look [http://www.mysqltutorial.org/mysql-primary-key/](here)
+  
+* If you have time...
+It is generally a bad idea to use mysql as user `root` all the time. 
 Your homework is to create a new user and allow that user access to the `todos` table. 
+See here for some (help)[http://dev.mysql.com/doc/refman/5.7/en/adding-users.html]
 

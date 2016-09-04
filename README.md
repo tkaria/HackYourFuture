@@ -18,7 +18,8 @@ MEAN (Mongo, Express, Angular, Node) vs LAMP (Linux, Apache, MySQL, PHP) - relat
 http://www.cs.tut.fi/~tjm/seminars/nosql2012/NoSQL-Intro.pdf 
 
 ## Installing MySQL
-[http://dev.mysql.com/doc/refman/5.7/en/windows-installation.html]
+[http://dev.mysql.com/doc/refman/5.7/en/windows-installation.html] USE THE MSI INSTALLER PLEASE! 
+
 [https://dev.mysql.com/doc/refman/5.7/en/osx-installation-pkg.html] 
 
 *Extra reading*

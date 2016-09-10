@@ -11,7 +11,9 @@ Your homework will be to change the todo project that you worked on in the last 
 
 ### Headstart 
 If you want to get ahead for tomorrow please have a look at the following:
+
 https://codeforgeek.com/2015/01/nodejs-mysql-tutorial/
+
 https://github.com/mysqljs/mysql
 
 

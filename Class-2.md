@@ -115,8 +115,11 @@ Your homework is to implement the following [http://www.restapitutorial.com/less
 There are similarities between the HTTP actions (verbs) and what we've been doing in MySQL:
 
 `POST` is similar to `INSERT`
+
 `PUT` is similar to `UPDATE`
+
 `DELETE` is similar to `DELETE`
+
 `GET` is similar to `SELECT`
 
 You need create two pieces to do this:

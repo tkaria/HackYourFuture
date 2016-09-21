@@ -9,9 +9,17 @@ The layout of a database. If you are using MySQL then the schema is the `.sql` f
 visualizing the layout (schema) of a database. This one is interesting - https://snowflakejoins.com/index.html  
 
 ### HTTP Verbs and how they relate to actions
+**GET** is like `select`
+
+**POST** is like `insert`
+
+**PUT** is like `update`
+
+**DELETE** is like `delete`
+
 
 ### Using PUT and DELETE in forms
-We found out that you CAN NOT use these verbs directly in forms. Instead you need to use `XMLHttpRequest`s and specify the verb when you make the `open()` call.
+We found out that you CAN NOT use these verbs directly in forms. Instead you need to use `XMLHttpRequest`s and specify the verb when you make the `open()` call. The reason for this is the difference between the `HTTP` specification and `HTML` specification. Here's the answer we found in class - http://stackoverflow.com/questions/5162960/should-put-and-delete-be-used-in-forms 
 
 ### MongoDB
 After some hassle we installed MongoDB.

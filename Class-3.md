@@ -38,7 +38,7 @@ We imported the restaurants database to have some test data:
 `c:\Program Files\Mongodb\bin\mongoimport.exe --db test --collection restaurants --drop --file c:\primer-dataset.json`
 Please know thtat this assumes you have saved the test data in `c:\primer-dataset.json`
 
-They both have commands to find (query) data:
+They both have commands to **find (query)** data:
 
 Docs for Mongo here - https://docs.mongodb.com/getting-started/shell/query/
 
@@ -50,7 +50,7 @@ while in MySQL we would say:
 
 `select * from todos where name = 'Eat breakfast';`
 
-And commands to insert data:
+And commands to **insert** data:
 
 Docs for Mongo here - https://docs.mongodb.com/getting-started/shell/insert/
 
@@ -62,7 +62,7 @@ while in MySQL we would say:
 
 `insert into todos (name, done) values ('Do some stuff', false);`
 
-And commands to update data:
+And commands to **update** data:
 
 Docs for Mongo here - https://docs.mongodb.com/getting-started/shell/update/
 
@@ -84,7 +84,7 @@ while in MySQL we would say:
 
 `update todos set done = 1 where name = 'Test';`
 
-Lastly, the commands for deleting data:
+Lastly, the commands to **delete** data:
 
 Docs for Mongo here - https://docs.mongodb.com/getting-started/shell/remove/
 

@@ -127,3 +127,11 @@ You need create two pieces to do this:
 2) Make those functions available to API users through the express framework you used with Joost
 
 As we discussed - I will do the `GET` as an example and you guys can do the rest. 
+
+Some helpful links: 
+
+http://expressjs.com/en/api.html#req
+
+https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
+
+https://erichonorez.wordpress.com/2013/02/10/how-create-a-rest-api-with-node-js-and-express/

@@ -1,7 +1,7 @@
 
-### Authentication example
+# Authentication example
 
-Please read this before you try the example. 
+*Please read this before you try the example.* 
 
 ## Prerequisites
 You will need mysql installed locally on your machine 

@@ -118,7 +118,7 @@ app.get('/api/secret_stuff', function(request, response) {
   }
   var decoded = authToken(token);
   if (decoded) {
-    response.send('FOOZLE');
+    response.send('IF YOU SEE THIS YOU SEE THE SECRET MESSAGE');
     response.end();
   } else {
     sendError(response, 403, 'Authorization required')

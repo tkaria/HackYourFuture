@@ -52,3 +52,6 @@ and press `Send`
 
 1. The token is set to expire after 5 minutes (this is set in the config file) so wait 5 minutes and try again and you should get a failure. 
 
+## Todo
+* Add example using auth0
+

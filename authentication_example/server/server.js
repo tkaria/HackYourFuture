@@ -25,9 +25,9 @@ var connection = mysql.createConnection({
 
 connection.connect(function(err) {
   if (!err) {
-    console.log('Database is connected ...');
+    console.log('Database is connected - ready for requests');
   } else {
-    console.log('Error connecting to database ...');
+    console.log('Error connecting to database');
   }
 });
 

@@ -1,3 +1,8 @@
+/**
+ * Resources: 
+ * http://www.restapitutorial.com/httpstatuscodes.html
+ */
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var fs = require('fs');

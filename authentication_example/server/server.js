@@ -16,6 +16,8 @@ var authToken = require('./auth/authToken').authToken;
 // User management library
 var userAdd = require('./user/userAdd').userAdd;
 
+// Configuration settings
+var config = require('./config/config').config;
 
 // Create a new application.
 var app = express();
@@ -138,4 +140,5 @@ function sendError(response, code, message) {
 
 
 // Start the server.
-app.listen(8080);
+console.log("Listening on port: ", config.port)
+app.listen(config.port);

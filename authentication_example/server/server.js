@@ -29,10 +29,10 @@ var connection = mysql.createConnection({
 });
 
 connection.connect(function(err) {
-  if (!err) {
-    console.log('Database is connected - ready for requests');
-  } else {
+  if (err) {
     console.log('Error connecting to database');
+  } else {
+    console.log('Database is connected - ready for requests');
   }
 });
 
@@ -50,11 +50,11 @@ app.post('/auth/email', function(request, response) {
   } else {
     // Check authentication credentials here
     authEmail(connection, user.email, user.password, function(err, user) {
-      if (!err) {
+      if (err) {
+        return sendError(response, 403, 'Error authenticating');
+      } else {
         response.json(user);
         response.end();
-      } else {
-        return sendError(response, 403, 'Error authenticating');
       }
     })
   }
@@ -71,11 +71,12 @@ app.post('/auth/email2', function(request, response) {
   } else {
     // Check authentication credentials here
     authEmail2(connection, user.email, user.password, function(err, token) {
-      if (!err) {
+      if (err) {
+        console.log(err);
+        return sendError(response, 403, 'Error authenticating');
+      } else {
         response.json(token);
         response.end();
-      } else {
-        return sendError(response, 403, 'Error authenticating');
       }
     })
   }
@@ -93,13 +94,13 @@ app.post('/user/add', function(request, response) {
   } else {
     // Add user to database
     userAdd(connection, user.email, user.password, function(err, user) {
-      if (!err) {
-        response.json(user);
-        response.end();
-      } else {
+      if (err) {
         // Let's log the error so we can debug
         console.log(err);
         return sendError(response, 400, 'Error adding user')
+      } else {
+        response.json(user);
+        response.end();
       }
     })
   }

@@ -130,7 +130,10 @@ app.get('/api/secret_stuff', function(request, response) {
 
 
 /**
- *  Generic error reporting to client
+ * Generic error reporting to client
+ * @param {response} response response to requestor 
+ * @param {int} code HTTP status code to return to requestor 
+ * @param {string} message Short description of error 
  */
 function sendError(response, code, message) {
   response.statusCode = code;

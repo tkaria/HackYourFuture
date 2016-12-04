@@ -1,4 +1,4 @@
-
+1. 
 Create a function that takes two objects as parameters and compares them. You will actually need to write two functions - one that compares with == and one that compares with ===. Remember that objects can have objects inside of them so you'll need to find a way to compare every element of every object (types and values). For example: 
 
 ```
@@ -21,7 +21,7 @@ var obj2 = {
 
 in our example we'll say that obj1 == obj2 is true and obj1 === obj2 is false. Make sure you can see why before you write any code!
 
--------------------------------------
+2.
 We saw that we can pass functions as arguments to other functions. Your task is to write a function that takes another function as an argument and runs it. 
 
 ```
@@ -35,7 +35,8 @@ function bar() {
 
 foo(bar);
 ```
--------------------------------------
+
+
 Write some code to test two arrays for equality using == and ===. Test the following:
 var x = [1,2,3];
 var y = [1,2,3];
@@ -44,13 +45,17 @@ What do you think will happen with x == y, x === y and z == y and z == x? Prove 
 Don't cheat! Seriously - try it first. 
 http://jsfiddle.net/jimschubert/85M4z/
 http://stackoverflow.com/questions/22395357/how-to-compare-two-arrays-are-equal-using-javascript
--------------------------------------
+
+3.
 https://www.freecodecamp.com/challenges/comparisons-with-the-logical-and-operator
--------------------------------------
+
+4.
 https://www.freecodecamp.com/challenges/record-collection
--------------------------------------
+
+5.
 https://www.freecodecamp.com/challenges/iterate-over-arrays-with-map
--------------------------------------
+
+6.
 We did the following example in class: 
 
 ```

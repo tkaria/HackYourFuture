@@ -42,7 +42,7 @@ My `home` directory in this case is `/users/timir` so when I type `cd` (with no 
 
 `mkdir` - create a new directory
 
-`touch` - create an empty directory
+`touch` - create an empty file
 
 # vim
 vim is an editor (like notepad on windows)

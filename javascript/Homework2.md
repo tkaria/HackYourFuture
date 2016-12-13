@@ -5,7 +5,7 @@ Create a function that takes two objects as parameters and compares them. You wi
 var obj1 = {
     a: 1, 
     b: 'this is the letter b', 
-    c: { foo: 'what is a foo anyway' 
+    c: { foo: 'what is a foo anyway', 
          bar: [1,2,3,4]
     }
 }
@@ -13,7 +13,7 @@ var obj1 = {
 var obj2 = {
     a: '1', 
     b: 'this is the letter b', 
-    c: { foo: 'what is a foo anyway' 
+    c: { foo: 'what is a foo anyway', 
          bar: [1,2,3,4]
     }
 }

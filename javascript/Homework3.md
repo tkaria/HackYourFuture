@@ -75,6 +75,7 @@ function f1(val) {
     val = val+1; 
     return val;
 }
+f1(x);
 console.log(x);
 
 
@@ -83,6 +84,7 @@ function f2(val) {
     val.x = val.x + 1;
     return val;
 }
+f2(y);
 console.log(y);
 ```
 If you are confused please run the code and then consult the Google for "javascript pass by value pass by reference"

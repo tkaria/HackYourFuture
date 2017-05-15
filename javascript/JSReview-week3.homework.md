@@ -51,7 +51,7 @@ Now read this: http://stackoverflow.com/questions/11488014/asynchronous-process-
 
 And try out the examples - please make SURE you understand what is happening. Ask questions if you do not. 
 
-Same instructions as above.
+Same instructions as above but now for Arrow functions (remember this is not intended to confuse you - it's just code).
 ### Arrow functions
 https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 Then read this. 

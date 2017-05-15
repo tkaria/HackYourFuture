@@ -63,31 +63,38 @@ function sayHello(name) {
     return 'Hello ' + name;
 }
 ```
-Same as above with arrow (fat arrow) notation
+
+Same as above with arrow (fat arrow) notation - shorthand notation. This is easy to mess up. Notice no return. 
+```
 var sayHello2 = (name) => 'Hello ' + name;
-
-
-### Return examples
 ```
-Return values
-function f1(x) {
-    this.x = x + 1;
-    return;
-}
 
-function f2(x) {
-    return this.x = x + 1;
+Same as above with arrow (fat arrow) notation - shorthand notation.  Better - easier to read - with return. 
+```
+var sayHello2 = (name) => {return 'Hello ' + name;}
+```
+
+Think about this one
+``` 
+function Person(firstName) {
+    this.firstName = firstName;
 }
 ```
-### Static members 
-http://odetocode.com/blogs/scott/archive/2015/02/02/static-members-in-es6.aspx
 
-### Closures examples
-https://jsfiddle.net/78dg25ax/?utm_source=website&utm_medium=embed&utm_campaign=78dg25ax
+Looks the same but what happens? See if you can figure out why from reading the documentation. 
+```
+var Person = (firstName) => {this.firstName = firstName}
+```
 
-### Why closures are helpful with async code:
-http://stackoverflow.com/questions/13343340/calling-an-asynchronous-function-within-a-for-loop-in-javascript
+Closures and async functions
+What's going on here - I would expect 3 alerts with 1,2,3 in them but noooooooooo
+```
+var i;
+for (i = 0; i < 3; i++) {
+    setTimeout(function callBackFunction() {
+        alert(i);
+    }, 100);
+}
+```
 
-### Promises 
-http://stackoverflow.com/questions/13343340/calling-an-asynchronous-function-within-a-for-loop-in-javascript
-https://www.youtube.com/watch?v=WBupia9oidU
+### Make the above function do what we think it should do. 

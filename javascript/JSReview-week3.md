@@ -63,8 +63,41 @@ function sayHello(name) {
     return 'Hello ' + name;
 }
 ```
-Same as above with arrow (fat arrow) notation
+
+Same as above with arrow (fat arrow) notation - shorthand notation. This is easy to mess up. Notice no return. 
+```
 var sayHello2 = (name) => 'Hello ' + name;
+```
+
+Same as above with arrow (fat arrow) notation - shorthand notation.  Better - easier to read - with return. 
+```
+var sayHello2 = (name) => {return 'Hello ' + name;}
+```
+
+Think about this one
+``` 
+function Person(firstName) {
+    this.firstName = firstName;
+}
+```
+
+Looks the same but what happens? See if you can figure out why from reading the documentation. 
+```
+var Person = (firstName) => {this.firstName = firstName}
+```
+
+Closures and async functions
+What's going on here - I would expect 3 alerts with 1,2,3 in them but noooooooooo
+```
+var i;
+for (i = 0; i < 3; i++) {
+    setTimeout(function callBackFunction() {
+        alert(i);
+    }, 100);
+}
+```
+
+### Make the above function do what we think it should do. 
 
 
 ### Return examples
